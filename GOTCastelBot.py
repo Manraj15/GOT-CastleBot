@@ -9,13 +9,13 @@ import bs4
 
 path = "/Users/manrajthind/Documents/GOT_caste_bot/commented.txt"
 header = '**Background of this castle:** \n'
-footer = "\n*---I am a bot of house Binary | My father is u/randomDudeSomeNumber*"
+footer = "\n*---I am a bot of house Binary | My father is [USERNAME]"
 
 def authenticate():
     print("Authenticating...\n")
-    reddit = praw.Reddit(client_id='X2sG2MLDNsmWiA',
-                client_secret="JZZYDGGAa2oIMcM4rFowOJI4uEk", password='4Obi-wankenobi',
-                user_agent='web:GOT-castle-bot:v0.1 (by /u/randomDudeSomeNumber)', username='randomDudeSomeNumber')
+    reddit = praw.Reddit(client_id='[CLIENT_ID]',
+                client_secret="[CLIENT_SECRET]", password='[PASSWORD]',
+                user_agent='web:GOT-castle-bot:v0.1 (by [USERNAME])', username='[USERNAME]')
     print('hi')
     print('Authenticated as {}\n'.format(reddit.user.me()))
     return reddit
